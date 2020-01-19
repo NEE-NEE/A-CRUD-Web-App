@@ -12,18 +12,18 @@ This is a simplified ERP system designed for a virtual company to manage its cli
 
 ### Functionalities:
 
-⋅⋅* Insert new client with specified name, email, phone number and billing method and automatically generate a unique key ID for it.
-⋅⋅* Delete a client and automatically delete all events booked with them.
-⋅⋅* Update one or more values of a client in the following fields: name, email, phone number and billing method.
-⋅⋅* Query through clients by one or more of the following fields: name, email, phone number and billing method.
-⋅⋅* Insert new events with existing client and automatically generated unique key and specify subject, type, description, budget, number of ⋅⋅* guests, desired date, location and desired items.
-⋅⋅* Delete an event.
-⋅⋅* Update one or more of the above fields of an event.
-⋅⋅* Query through events by one or more of the above fields.
-⋅⋅* Insert new supplier with specified name, contactor and phone number.
-⋅⋅* Delete suppliers.
-⋅⋅* Update the above values of a supplier.
-⋅⋅* Query though suppliers by the above fields.
+* Insert new client with specified name, email, phone number and billing method and automatically generate a unique key ID for it.
+* Delete a client and automatically delete all events booked with them.
+* Update one or more values of a client in the following fields: name, email, phone number and billing method.
+* Query through clients by one or more of the following fields: name, email, phone number and billing method.
+* Insert new events with existing client and automatically generated unique key and specify subject, type, description, budget, number of * guests, desired date, location and desired items.
+* Delete an event.
+* Update one or more of the above fields of an event.
+* Query through events by one or more of the above fields.
+* Insert new supplier with specified name, contactor and phone number.
+* Delete suppliers.
+* Update the above values of a supplier.
+* Query though suppliers by the above fields.
 
 ### Demo:
 
