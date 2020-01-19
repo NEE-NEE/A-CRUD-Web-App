@@ -1,0 +1,7 @@
+{
+    "host": "",
+    "port": 3306,
+    "user": "app",
+    "password": "secret",
+    "database": "perfect_party"
+}

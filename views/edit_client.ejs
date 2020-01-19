@@ -1,0 +1,27 @@
+<%- include('_head.ejs', {title: 'Create Client'}) %>
+<% if (_client_) { %>
+    <form class="w3-container light-border" method="post">
+        <div style="width:260px">
+            <p>First Name: <input style="float:right" type="text" name="FirstName" value="<%= _client_.FirstName%>"></p>
+            <p>Last Name: <input style="float:right" type="text" name="LastName" value="<%= _client_.LastName%>"></p>
+            <p>Email: <input style="float:right" type="text" name="Email" value="<%= _client_.Email%>"></p>
+            <p>Phone: <input style="float:right" type="tel" name="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="<%= _client_.Phone%>"></p>
+        </div>
+        <p>Billing method: <br>
+            <input type="radio" name="BillingMethod" value="Debit"> Debit
+            <input type="radio" name="BillingMethod" value="Cash"> Cash
+            <input type="radio" name="BillingMethod" value="Credit"> Credit
+        </p>
+        <script>
+            let select_button =document.querySelector(`input[name=BillingMethod][value=${'<%=_client_.BillingMethod%>'}]`);
+            select_button.checked = true;
+        </script>
+        <div class="w3-container" style="width:470px">
+            <input type="button" value="Cancel">
+            <input style="float:right" type="submit" value="Edit Client">
+        </div>
+    </form>
+<% } else { %>
+    <p class="text-center">Client Not Found. Go <a href="/create_client">here</a> to add clients.</p>
+<% } %>
+<%- include _tail.ejs %>

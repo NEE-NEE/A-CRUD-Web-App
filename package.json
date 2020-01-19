@@ -1,0 +1,14 @@
+{
+  "name": "perfect-party",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "dbsetup": "node support/dbsetup.js"
+  },
+  "dependencies": {
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "mysql": "~2.17.1"
+  }
+}

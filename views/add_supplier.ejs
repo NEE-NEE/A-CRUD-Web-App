@@ -1,0 +1,27 @@
+<%- include('_head.ejs', {title: 'Create Supplier'}) %>
+<form method="post">
+    <div class="w3-container light-border">
+        <table class="table table-hovered">
+            <tbody>
+            <tr>
+                <th scope="row">Name:</th>
+                <td><input type="text" name="Name"></td>
+            <tr>
+                <th scope="row">Contact Name:</th>
+                <td><input type="text" name="ContactName"></td>
+            <tr>
+                <th scope="row">Contact Phone:</th>
+                <td><input type="text" name="ContactPhone"></td>
+            </tbody>
+        </table>
+
+        <div class="w3-container" style="width:470px">
+            <input type="button" value="Cancel">
+            <input type="submit" value="Add">
+        </div> 
+		
+    </div>
+
+</form> 
+
+<%- include _tail.ejs %>
